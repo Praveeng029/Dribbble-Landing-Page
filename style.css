@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f7f4;
+    overflow-x: hidden;
+}
+header .nav-logo{
+    height: 100px;
+    width: 120px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+/* header .nav-logo:hover{
+    opacity: 0.7;
+} */
+/* header .nav-logo img{
+    background-color: #f8f7f4;
+} */
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease-in;
+}
+/* header ul a:hover{
+    opacity: 0.7;
+} */
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f7f4;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    position: relative;
+    left: -80px;
+}
+header ul i{
+    cursor: pointer;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    right: 40px;
+}
+.nav-right input{
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+.nav-right button{
+    border: none;
+    font-size: 14px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.nav-right .signup{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-right: 10px;
+    transition: 0.3s ease-in;
+}
+/* .nav-right .signup:hover{
+    opacity: 0.7;
+} */
+.nav-right .login{
+    background-color: #f8f7f4;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+/* .nav-right .login:hover{
+    opacity: 0.7;
+} */
+.opacity-transition:hover{
+    opacity: 0.8;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f7f4;
+}
+.page1{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page1 .page-1-btn{
+    color:var(--secondary-color);
+    background-color: #ffda79;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    transition: 0.3s ease-in;
+    animation: color-changing 25s infinite 0.2s ease;
+}
+@keyframes color-changing {
+    0%{
+        background-color: #ffda79;
+    }
+    25%{
+        background-color: rgb(252, 125, 146);
+    }
+    50%{
+        background-color: #79afff;
+    }
+    75%{
+        background-color: #8fff79;
+    }
+    100%{
+        background-color: #ff79f8;
+    }
+}
+.page1 h1{
+    font-size: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.page1 p{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.page1 .started-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.scroll {
+    width: 2800px;   /*2739px */
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+    overflow-x: scroll;
+    animation: slide 20s linear infinite;
+}
+.card {
+    width: 273px;
+    height: 340px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    border-radius: 32px;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .userinfo {
+   background: #2f2f2f76;
+   width: 273px;
+    height: 340px;
+    position: absolute;
+    top: 0;
+}
+
+.card .userinfo .userD {
+    margin-top: 230px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.card .userinfo .userD h4 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.card .userinfo .userD .tags {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.card .userinfo .userD .tags li{
+   background-color: transparent;
+   border: 1px solid #dadada;
+   font-size: 10px;
+   padding: 8px 10px;
+   border-radius: 50px;
+}
+
+@keyframes slide {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: calc(100% - 550px);
+    }
+}
+.page4{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30PX;
+    background-color: #ffda79;
+}
+.page4 h2{
+    font-size: 70px;
+    text-align: center;
+    font-weight: 500;
+    /* position: relative;
+    bottom: 50px; */
+    /* margin-bottom: 40px; */
+    /* line-height: 70px; */
+}
+.page4 p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    /* margin-bottom: 100px; */
+    line-height: 30px;
+    /* position: relative;
+    bottom: 0; */
+}
+.page4 .btn-group-1{
+    display: flex;
+    gap: 20px;
+}
+.page4 button{
+    padding: 16px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    /* position: relative;
+    top: 20px; */
+    font-size: 16px;
+    /* margin-bottom: 100px; */
+}
+.page4 .btn-1{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.page4 .btn-2{
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in;
+}
+.page4 p,a{
+    font-size: 20PX;
+    font-weight: 400;
+}
+.page4 a{
+    text-decoration: underline;
+    color: black;
+}
+.page5{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.scroll-footer{
+    height: 100%;
+    width: 2000px;
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    overflow: hidden;
+    gap: 75px;
+    animation: slide-am 20s linear infinite;
+
+}
+.page5 .footer-card{
+    height: 320px;
+    width: 150px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+@keyframes slide-am {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: calc(100% - 550px);
+    }
+}
+/* 
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+} */
+.page5 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.page5 .footer-card p{
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: 500;
+    padding: 20px 2px;
+}
+
+
+.page6{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.page6 ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin-left: 100px;
+}
+.page6 .icons-list{
+    display: flex;
+    gap: 15px;
+    margin-left: 80px;
+}
+.page6 .footer-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.page6 img{
+    height: 100px;
+    width: 120px;
+    cursor: pointer;
+}
+.page6 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.page6 .icons-list i{
+    font-size: 25px;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.footer-left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.footer-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    font-size: 16px;
+    cursor: pointer;
+}
+footer p{
+    color: black;
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+/* Dark Mode- Light mode*/
